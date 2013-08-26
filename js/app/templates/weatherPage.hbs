@@ -1,0 +1,40 @@
+<div class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <h2>{{dateConverter currently.time}}</h2>
+                <p>
+                    {{round currently.temperature}}&deg;C
+                </p>
+                <p>
+                    {{currently.summary}}
+                </p>
+                <p>
+                    <img src="img/weather/{{currently.icon}}.png" alt="{{currently.icon}}"/>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+        {{#each daily.data}}
+            {{#newRow @index 0}}
+                <div class="row">
+            {{/newRow}}
+            {{#newRow @index 3}}
+                <div class="row">
+            {{/newRow}}
+
+                <div class="col-lg-4">
+                    <p>{{dateConverter time}}</p>
+                    <p> {{summary}}</p>
+                    <p>Temperatures: From {{round temperatureMin}}&deg;C To {{round temperatureMax}}&deg;C </p>
+                    <p><img src="img/weather/{{icon}}.png" alt="{{icon}}" /></p>
+                </div>
+
+            {{#closeRow @index 3}}
+                </div>
+            {{/closeRow}}
+        {{/each}}
+</div>

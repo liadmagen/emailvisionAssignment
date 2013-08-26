@@ -1,0 +1,11 @@
+<div class="container">
+    <h1>ToDo? Today!</h1>
+    <div class="row">
+        <div class="col-lg-4" id="current-weather">
+            <p>{{round currently.temperature}}&deg;C - {{currently.summary}}</p>
+            <p>You are in: {{timezone}}</p>
+        </div>
+        <div class="col-lg-4"><img src="img/weather/{{currently.icon}}.png" alt="{{currently.icon}}" /></div>
+    </div>
+    <p><a class="btn btn-primary btn-lg showMore" href="Weather">Show more &raquo;</a></p>
+</div>
