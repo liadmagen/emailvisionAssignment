@@ -7,3 +7,6 @@ Although the original request was just using backbone, I find that backbone is t
 Hence, I'vebeen using chaplin in addition to form a bit of order in the app.
 
 I've used bootstrap for the design (basically, it support less, but i didn't really add many other classes)
+
+working example may be found here:
+http://emailvision.comoj.com/
